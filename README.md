@@ -50,21 +50,25 @@ The system supports **Admin**, **Vendor**, and **Customer** roles, handling auth
 
 project/
 │
+
 ├── admin/
 │ └── ...
 │
+
 ├── customer/
 │ └── addcart.php
 │ └── view_pdt.php
 │ └── orders.php
 │ └── ...
 │
+
 ├── vendor/
 │ └── home.php
 │ └── upload_product.php
 │ └── view_pdt.php
 │ └── ...
 │
+
 ├── shared/
 │ ├── login.php
 │ ├── signup.php
@@ -72,6 +76,7 @@ project/
 │ ├── connection.php (ignored in Git; contains DB credentials)
 │ └── connection.example.php (sample file for setup)
 │
+
 ├── images/
 └── README.md
 
@@ -94,3 +99,54 @@ git clone https://github.com/your-username/your-repo-name.git
 ```
 
 Move the project into XAMPP’s directory:
+C:/xampp/htdocs/project-folder
+
+
+### **3. Import the Database**
+1. Open: http://localhost/phpmyadmin  
+2. Create database (example: `ecommerce_db`)  
+3. Import the SQL file (if you provide one)  
+
+### **4. Configure Database**
+Create and update:
+
+`shared/connection.php`
+
+```
+<?php $host = "localhost"; $user = "root"; $pass = ""; $dbname = "ecommerce_db"; $conn = mysqli_connect($host, $user, $pass, $dbname); ?>
+```
+
+(Your real connection.php is ignored by Git for security.)
+
+### **5. Run the Project**
+Go to:
+http://localhost/project-folder/shared/login.html
+
+
+---
+
+## 🧩 Future Enhancements
+
+- Add JWT-based API version  
+- Add password hashing (if not implemented)  
+- Add image upload validation  
+- Migrate PHP code to MVC structure  
+- Add search and filter for products  
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo  
+2. Create a feature branch:  
+   `git checkout -b feature-name`  
+3. Commit changes and push  
+4. Create a pull request  
+
+---
+
+## 👨‍💻 Author
+**Vini Vyas**  
+Full-Stack Developer | MCA  
+GitHub: https://github.com/ViniVyas  
+
