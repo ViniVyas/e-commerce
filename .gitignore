@@ -1,0 +1,62 @@
+##########################
+# 🔐 SENSITIVE FILES
+##########################
+
+# Database credentials (DO NOT UPLOAD)
+shared/connection.php
+
+# Environment config (if you add later)
+.env
+*.env
+config.php
+*.local.php
+*.secret.php
+
+##########################
+# 🗂️ SYSTEM / IDE FILES
+##########################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# PHPStorm / IntelliJ
+.idea/
+
+##########################
+# 📁 RUNTIME / CACHE / LOGS
+##########################
+
+*.log
+logs/
+cache/
+tmp/
+sessions/
+session.save_path/*
+
+##########################
+# 🖼️ UPLOADS (Optional)
+##########################
+# Uncomment if you have large or user-uploaded images you don't want in GitHub:
+# shared/images/uploads/
+# uploads/
+
+##########################
+# 🪝 COMPOSER (if added later)
+##########################
+
+vendor/
+composer.lock
+
+##########################
+# 🟦 NODE (if you ever add JS build tools)
+##########################
+
+node_modules/
