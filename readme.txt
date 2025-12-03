@@ -1,91 +1,96 @@
-Why ?
-    To built better product/Websites
-    To Earn/Grow better
-How ?
-    Build product that will attract lost of clients
+# 🛒 E-Commerce Web Application (PHP + MySQL)
+
+A role-based e-commerce web application built using **PHP, MySQL, HTML, CSS, and JavaScript**, running on the XAMPP Apache server.  
+The system supports **Admin**, **Vendor**, and **Customer** roles, handling authentication, product management, ordering, and cart operations.
+
+---
+
+## 🚀 Features
+
+### 👤 Authentication (Customer & Vendor)
+- Login & Signup with session-based authentication  
+- Role-based redirection (Vendor → Dashboard, Customer → Products page)  
+- AuthGuard to block unauthorized access  
+- Secure login with password validation  
+
+### 🛍️ Customer Module
+- View all products  
+- Add/remove items from cart  
+- Place and track orders  
+- View order history  
+- Manage profile  
+
+### 🛒 Vendor Module
+- Upload new products  
+- Manage existing products  
+- View all listed items  
+- Handle orders placed for vendor’s products  
+
+### 🎛️ Admin Module
+*(If implemented — describe briefly)*  
+- Manage vendors  
+- Manage customers  
+- View overall data  
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | PHP (Native, no framework) |
+| Database | MySQL (phpMyAdmin) |
+| Server | Apache (XAMPP) |
+| Version Control | Git & GitHub |
+
+---
+
+## 📂 Project Structure
+
+project/
+│
+├── admin/
+│ └── ...
+│
+├── customer/
+│ └── addcart.php
+│ └── view_pdt.php
+│ └── orders.php
+│ └── ...
+│
+├── vendor/
+│ └── home.php
+│ └── upload_product.php
+│ └── view_pdt.php
+│ └── ...
+│
+├── shared/
+│ ├── login.php
+│ ├── signup.php
+│ ├── authguard.php
+│ ├── connection.php (ignored in Git; contains DB credentials)
+│ └── connection.example.php (sample file for setup)
+│
+├── images/
+└── README.md
 
 
-    Build a free product attract traffic , so you can show Ads to earn money
-    Build a compelling product so you can charge the client to use the Software as Service(SAAS)
-    Youtube
+---
 
-    Purchase and Sale => E-Commerce Website Portal
+## 🛠️ Installation & Setup (Local XAMPP)
 
-    Conception of product Idea
-    Gathering Requirement(Listing Modules/Functionality)
-    Documentation(BRD,FRD,TDD)
-    Estimation
+### **1. Install XAMPP**
+Download from: https://www.apachefriends.org/
 
+Start:
+- Apache  
+- MySQL  
 
-    -Roles & Responsibilites    
-        Superadmin
-            Platform providers - MVP
-            Bug Fixes
-            Enhancing the Platform with latest Tech    
-        Vendor
-            Authentication/KYC - MVP
-                Signup
-                    name
-                    password
-                    usertype
-                DB
-                    create user table
-                        userid - int,primary,AI
-                        username  - varchar
-                        password - varchar
-                        usertype - varchar
-                        created_date - timestamp - default to current timestamp
-                Login
+### **2. Clone the Repository**
+```
+git clone https://github.com/your-username/your-repo-name.git
 
-            Manage Product - MVP
-                Add product
-                    name
-                    price
-                    description/features
-                    images
-                DB
-                    pid - AI
-                    name - varchar(80)
-                    price - float
-                    detail - text
-                    impath - varchar(200) - image will be stored in server disk and path of that image will be liked into the    impath column
-                    owner - int - foreign key of userid
-                    created_date - timestamp - default to current timestamp
+```
 
-                View Product
-                Update Product
-                Delete Product
-            Manage Orders - MVP
-                View Order
-                Update Order
-                Deliver Order
-        Customer
-            Authentication - MVP
-            View Product  MVP
-            Compare Product 
-            Manage Cart - MVP
-                Add
-                view
-                edit
-                delete
-            Place Order - MVP
-                Payment Gateway
-                COD
-            Track order
-            View Order History - MVP
-            Review/Rate Purchased Orders
-            Replace/Refund/Contact Customer care
-
-        Delivery Partner 
-            Get Orders from Vendor
-            Manage Delivery/Returns
-        Customer Care
-        Legal Advisors
-            Complainces for the territory
-        Auditors/Accoutants
-
-
-    MVP in product development
-    USP
-
-    
+Move the project into XAMPP’s directory:
