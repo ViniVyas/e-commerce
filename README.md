@@ -105,7 +105,7 @@ C:/xampp/htdocs/project-folder
 ### **3. Import the Database**
 1. Open: http://localhost/phpmyadmin  
 2. Create database (example: `ecommerce_db`)  
-3. Import the SQL file (if you provide one)  
+3. Import the SQL file   
 
 ### **4. Configure Database**
 Create and update:
@@ -116,7 +116,7 @@ Create and update:
 <?php $host = "localhost"; $user = "root"; $pass = ""; $dbname = "ecommerce_db"; $conn = mysqli_connect($host, $user, $pass, $dbname); ?>
 ```
 
-(Your real connection.php is ignored by Git for security.)
+
 
 ### **5. Run the Project**
 Go to:
@@ -128,7 +128,6 @@ http://localhost/project-folder/shared/login.html
 ## 🧩 Future Enhancements
 
 - Add JWT-based API version  
-- Add password hashing (if not implemented)  
 - Add image upload validation  
 - Migrate PHP code to MVC structure  
 - Add search and filter for products  
